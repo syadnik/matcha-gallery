@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A gallery of Sharvari Yadnik's favorite matcha drinks and cafes around Los Angeles.">
+
+  <title>My Favorite Matcha Places in LA</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Chart.js is the JavaScript library used for the drink-style chart. -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <p class="course-name">SSCI 591 &mdash; Web &amp; Mobile GIS &mdash; Fall 2026</p>
+    <h1>My Favorite Matcha Places in LA</h1>
+    <p class="subtitle">
+      A small gallery for matcha lovers looking for their next cafe and drink
+      around Los Angeles County.
+    </p>
+  </header>
+
+  <main>
+    <section class="intro-section" aria-labelledby="intro-heading">
+      <div>
+        <h2 id="intro-heading">A Little About This List</h2>
+        <p>
+          Here are a few photos and details about the matcha drinks I have tried
+          and loved around LA County so far, in no particular order.
+        </p>
+        <p>
+          Fun fact: the first time I tried matcha was at Cafe Dulce in USC
+          Village. There was no going back after that! &#94;_&#94;
+        </p>
+      </div>
+
+      <div class="recommendation-box">
+        <p class="recommendation-label">Need a recommendation?</p>
+        <button id="matcha-button" type="button">Pick a Matcha Spot</button>
+        <p id="recommendation" aria-live="polite">
+          Click the button and I will choose one for you.
+        </p>
+      </div>
+    </section>
+
+    <section aria-labelledby="gallery-heading">
+      <h2 id="gallery-heading">Matcha Gallery</h2>
+
+      <div class="gallery">
+        <figure>
+          <img src="C:\Users\SHARVARI YADNIK\Desktop\SSCI 591-Web & Mobile GIS\Project 1\photo\matcha1.jpg" alt="Matcha Duo from Rok Tea and Coffee" loading="lazy">
+          <figcaption>Rok Tea and Coffee</figcaption>
+        </figure>
+
+        <figure>
+          <img src="C:\Users\SHARVARI YADNIK\Desktop\SSCI 591-Web & Mobile GIS\Project 1\photo\matcha2.jpg" alt="Matcha Einspanner from Archives of Us" loading="lazy">
+          <figcaption>Archives of Us</figcaption>
+        </figure>
+
+        <figure>
+          <img src="C:\Users\SHARVARI YADNIK\Desktop\SSCI 591-Web & Mobile GIS\Project 1\photo\matcha3.jpg" alt="Matcha Einspanner from MemoryLook" loading="lazy">
+          <figcaption>MemoryLook</figcaption>
+        </figure>
+
+        <figure>
+          <img src="C:\Users\SHARVARI YADNIK\Desktop\SSCI 591-Web & Mobile GIS\Project 1\photo\matcha4.jpg" alt="Matcha Duo from Stagger" loading="lazy">
+          <figcaption>Stagger</figcaption>
+        </figure>
+
+        <figure>
+          <img src="C:\Users\SHARVARI YADNIK\Desktop\SSCI 591-Web & Mobile GIS\Project 1\photo\matcha5.jpg" alt="Matcha Einspanner from Stereoscope" loading="lazy">
+          <figcaption>Stereoscope</figcaption>
+        </figure>
+
+        <figure>
+          <img src="C:\Users\SHARVARI YADNIK\Desktop\SSCI 591-Web & Mobile GIS\Project 1\photo\matcha6.jpg" alt="Matcha Latte from Cafe Dulce" loading="lazy">
+          <figcaption>Cafe Dulce</figcaption>
+        </figure>
+
+        <figure>
+          <img src="C:\Users\SHARVARI YADNIK\Desktop\SSCI 591-Web & Mobile GIS\Project 1\photo\matcha7.jpg" alt="Matcha Latte from Saero" loading="lazy">
+          <figcaption>Saero</figcaption>
+        </figure>
+
+        <figure>
+          <img src="C:\Users\SHARVARI YADNIK\Desktop\SSCI 591-Web & Mobile GIS\Project 1\photo\matcha8.jpg" alt="Matcha Latte from Bonsai" loading="lazy">
+          <figcaption>Bonsai</figcaption>
+        </figure>
+
+        <figure>
+          <img src="C:\Users\SHARVARI YADNIK\Desktop\SSCI 591-Web & Mobile GIS\Project 1\photo\matcha9.jpg" alt="Matcha Einspanner from DAMO" loading="lazy">
+          <figcaption>DAMO</figcaption>
+        </figure>
+
+        <figure>
+          <img src="C:\Users\SHARVARI YADNIK\Desktop\SSCI 591-Web & Mobile GIS\Project 1\photo\matcha10.jpg" alt="Matcha Latte with Matcha Creamtop from Maruwu Seicha" loading="lazy">
+          <figcaption>Maruwu Seicha</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section aria-labelledby="cafes-heading">
+      <h2 id="cafes-heading">Matcha Cafes Visited</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Name of Cafe</th>
+            <th>Drink Type</th>
+            <th>Brand</th>
+            <th>Sourced From</th>
+            <th>Location</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Cafe">Rok Tea and Coffee</td>
+            <td data-label="Drink">Matcha Duo</td>
+            <td data-label="Brand">Proprietary Blend</td>
+            <td data-label="Source">Uji, Japan</td>
+            <td data-label="Location">Koreatown</td>
+          </tr>
+          <tr>
+            <td data-label="Cafe">Archives of Us</td>
+            <td data-label="Drink">Matcha Einspanner</td>
+            <td data-label="Brand">Single Origin Kagoshima</td>
+            <td data-label="Source">Kagoshima, Japan</td>
+            <td data-label="Location">Downtown LA</td>
+          </tr>
+          <tr>
+            <td data-label="Cafe">MemoryLook</td>
+            <td data-label="Drink">Matcha Einspanner</td>
+            <td data-label="Brand">Jade Leaf Tea</td>
+            <td data-label="Source">Uji/Kagoshima, Japan</td>
+            <td data-label="Location">Koreatown</td>
+          </tr>
+          <tr>
+            <td data-label="Cafe">Stagger</td>
+            <td data-label="Drink">Double Matcha</td>
+            <td data-label="Brand">Proprietary Blend</td>
+            <td data-label="Source">Uji/Kagoshima, Japan</td>
+            <td data-label="Location">Koreatown</td>
+          </tr>
+          <tr>
+            <td data-label="Cafe">Stereoscope</td>
+            <td data-label="Drink">Matcha Einspanner</td>
+            <td data-label="Brand">Mizuba Tea Company</td>
+            <td data-label="Source">Uji,Japan</td>
+            <td data-label="Location">West Hollywood</td>
+          </tr>
+          <tr>
+            <td data-label="Cafe">Cafe Dulce</td>
+            <td data-label="Drink">Matcha Latte</td>
+            <td data-label="Brand">Aoi Tea </td>
+            <td data-label="Source">Nishio City, Japan</td>
+            <td data-label="Location">USC Village</td>
+          </tr>
+          <tr>
+            <td data-label="Cafe">Saero</td>
+            <td data-label="Drink">Matcha Latte</td>
+            <td data-label="Brand">Proprietary Blend</td>
+            <td data-label="Source">Uji, Japan</td>
+            <td data-label="Location">Downtown LA</td>
+          </tr>
+          <tr>
+            <td data-label="Cafe">Bonsai</td>
+            <td data-label="Drink">Matcha Latte</td>
+            <td data-label="Brand">HIBI</td>
+            <td data-label="Source">Kagoshima, Japan</td>
+            <td data-label="Location">Sawtelle Boulevard</td>
+          </tr>
+          <tr>
+            <td data-label="Cafe">DAMO</td>
+            <td data-label="Drink">Matcha Einspanner</td>
+            <td data-label="Brand">Proprietary Blend</td>
+            <td data-label="Source">Undisclosed</td>
+            <td data-label="Location">Koreatown</td>
+          </tr>
+          <tr>
+            <td data-label="Cafe">Maruwu Seicha</td>
+            <td data-label="Drink">Matcha Latte with Matcha Creamtop</td>
+            <td data-label="Brand">Uji Tea</td>
+            <td data-label="Source">Uji,Japan</td>
+            <td data-label="Location">Culver City</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Created by Sharvari Yadnik for SSCI 591.</p>
+    <p>Built on 18 September 2026.</p>
+  </footer>
+</body>
+
+</html>
