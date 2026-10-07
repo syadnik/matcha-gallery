@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>LA Matcha Map | Sharvari Yadnik</title>
+
+  <style>
+    body {
+      margin: 0;
+      background-color: #f4f1df;
+      color: #26351d;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #4c811b;
+      color: white;
+      padding: 24px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0 0 8px;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: auto;
+      padding: 24px;
+    }
+
+    .introduction {
+      max-width: 800px;
+      margin: 0 auto 24px;
+      text-align: center;
+    }
+
+    .app-container {
+      width: 100%;
+      height: 75vh;
+      min-height: 600px;
+      overflow: hidden;
+      border: 3px solid #4c811b;
+      border-radius: 12px;
+      background-color: white;
+    }
+
+    .app-container iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    footer {
+      padding: 20px;
+      text-align: center;
+      color: #526347;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        padding: 12px;
+      }
+
+      .app-container {
+        height: 80vh;
+        min-height: 520px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>LA Matcha Map</h1>
+    <p>An interactive guide to some of my favorite matcha cafés in Los Angeles County.</p>
+  </header>
+
+  <main>
+    <section class="introduction">
+      <h2>Explore the Map</h2>
+
+      <p>
+        This map introduces ten matcha cafes that I have visited around Los
+        Angeles County. Use the search and filter tools to explore cafes by
+        neighborhood or drink type. Click a cafe marker to view more information
+        and access its Yelp page.
+      </p>
+    </section>
+
+    <div class="app-container">
+      <iframe
+        src="https://experience.arcgis.com/experience/8e4f664e232344ab9e5dcb5970b8ea69"
+        title="Interactive map of matcha cafés in Los Angeles"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </main>
+
+  <footer>
+    <p>Created by Sharvari Yadnik for SSCI 591.</p>
+  </footer>
+
+</body>
+</html>
